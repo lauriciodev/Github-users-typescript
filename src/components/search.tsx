@@ -3,10 +3,18 @@ type SearchProps = {
 }
 
 import SearchContainer from "./Search.module.css"
-import { useState } from 'react'
+import { useState, KeyboardEvent } from 'react'
 import {FaSearch} from "react-icons/fa"
 const Search = ({loadUser}:SearchProps) =>{
 const [userName,setUserName] =useState("");
+
+const handleKeyDown = (e:KeyboardEvent) =>{
+
+if(e.key === "Enter"){
+  loadUser(userName)
+}
+
+}
 
 
   return (
@@ -14,7 +22,9 @@ const [userName,setUserName] =useState("");
       <h2>Busque por um usuário</h2>
       <p>conheça seus melhores repositórios</p>
       <div className={SearchContainer.inputContainer}>
-        <input type="text" placeholder='Digite o nome de um usuário' onChange={(e) => setUserName(e.target.value)} />
+        <input type="text" placeholder='Digite o nome de um usuário' onChange={(e) => setUserName(e.target.value)}
+        onKeyDown={handleKeyDown}
+        />
         <button onClick={() => loadUser(userName)} ><FaSearch/></button>
       </div>
     </div>

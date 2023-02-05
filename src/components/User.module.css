@@ -1,0 +1,36 @@
+.Container{
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.Container img{
+  width: 100%;
+  max-width: 100px;
+}
+
+.ContainerFollow{
+  display: flex;
+  gap: 10px;
+}
+
+.location{
+  display: flex;
+  gap: 10px;
+}
+
+.button{
+  background-color: rgb(23, 24, 23);
+  padding: 10px 15px;
+  color: white;
+  transition: all .3s;
+}
+.button:hover{
+  background-color: rgb(23, 24, 23);
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid white;
+}

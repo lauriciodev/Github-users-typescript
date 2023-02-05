@@ -10,6 +10,11 @@
   height: 30px;
   width: 90%;
   font-size: 1rem;
+  
+}
+
+.inputContainer input:focus{
+  outline: none;
 }
 
 .inputContainer button{
