@@ -28,7 +28,7 @@ return (
         <h3>{following}</h3>
       </div>
      </div>
-     <Link className={UserStyle.button}  to={`/repos/${login}`}>Ver Melhores repositórios</Link>
+     <Link className={UserStyle.button}  to={`/profile/${login}`}>Ver repositórios</Link>
   </div>
 )
 }

@@ -5,7 +5,6 @@ function App() {
 
   return (
     <div className={classes.App}>
-      <h1>github users</h1>
       <Outlet/>
     </div>
   )

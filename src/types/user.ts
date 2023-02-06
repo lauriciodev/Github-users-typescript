@@ -5,3 +5,11 @@ export type UserProps = {
   followers:number;
   following:number;
 }
+
+export type ProfileProps = {
+  id:number;
+  full_name:string;
+  html_url:string;
+  avatar_url:string;
+
+}

@@ -1,0 +1,36 @@
+
+.MasterContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ justify-content: center;
+}
+
+
+.button {
+background-color: #131313;
+color: white;
+padding: 5px;
+border: 1px solid white;
+
+}
+
+.Container{
+background-color: rgb(46, 46, 46);
+width: 100%;
+max-width: 250px;
+display: flex;
+padding: 10px;
+}
+
+.InfoContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.InfoContainer a{
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 5px;
+}
